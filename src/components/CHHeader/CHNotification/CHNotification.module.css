@@ -1,0 +1,41 @@
+.notificationOverlay {
+  max-width: 400px;
+  padding: var(--space-2xl);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-gray-line);
+  border-radius: var(--space-2xl) 0px var(--space-2xl) var(--space-2xl);
+}
+.notificationOverlay :global .ant-dropdown-menu {
+  padding: 0 calc(var(--space-sm) + 2px) 0 0;
+  max-height: 430px;
+  overflow: auto;
+}
+.notificationOverlay :global .ant-dropdown-menu::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.notificationOverlay :global .ant-dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: var(--clr-gray-line);
+  border-radius:calc(var(--space-xs) + 1px);
+}
+.notificationOverlay :global .ant-dropdown-menu::-webkit-scrollbar-track {
+  background-color: var(--clr-gray-washed);
+}
+.notificationOverlay :global .ant-dropdown-menu .ant-dropdown-menu-item {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--clr-gray-washed);
+}
+.notificationOverlay :global .ant-dropdown-menu .ant-dropdown-menu-item:hover {
+  background-color: transparent;
+}
+.MenuItem {
+  display: flex;
+  align-items: center;
+}
+.MenuItem p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  line-height: 1.25;
+}

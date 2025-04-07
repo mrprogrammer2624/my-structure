@@ -1,0 +1,22 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* Adjust the gap as needed */
+}
+
+.vissonIconWrapper {
+    width: 6.5rem !important;
+    height: 6.5rem !important;
+}
+
+.visionWrapper {
+    padding: 5rem;
+}
+
+.justiceStand {
+    width: 20rem !important;
+    height: 20rem !important;
+    top: 86.6%;
+    z-index: 9 !important;
+}

@@ -1,0 +1,24 @@
+.labelBtn > label {
+  display: flex;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-2xl);
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid var(--clr-gray-line);
+  cursor: pointer;
+}
+.labelBtn > label p {
+  color: var(--clr-black);
+}
+.labelBtn > input {
+  display: none;
+}
+
+.labelBtn > input:checked + label {
+  background-color: #f2f5ff;
+  border: 1px solid var(--clr-primary);
+}
+.labelBtn > input:checked + label > p {
+  color: var(--clr-primary);
+}

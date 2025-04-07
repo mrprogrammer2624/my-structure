@@ -1,0 +1,62 @@
+.Button {
+  font-size: var(--text-2xl);
+  height: 50px;
+  font-weight: 500;
+  border-radius: var(--space-md);
+  color: var(--clr-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Button:global.ant-btn-circle {
+  width: 50px;
+}
+
+.Button:global.ant-btn-sm {
+  height: 40px;
+}
+
+.Button:global.ant-btn-sm.ant-btn-circle {
+  width: 40px;
+}
+
+.Button:global.ant-btn-secondary {
+  background-color: var(--clr-white);
+  color: var(--clr-primary);
+}
+
+.ButtonTable {
+  height: 35px;
+  font-size: var(--text-lg);
+  border: 1px solid var(--clr-text);
+  color: var(--clr-text);
+  border-radius: 35px;
+  padding: var(--space-sm);
+  min-width: 10rem;
+}
+
+.EditButtonTable {
+  border-color: var(--clr-primary);
+  color: var(--clr-primary);
+}
+
+.DangerButtonTable {
+  border-color: var(--clr-error);
+  color: var(--clr-error);
+}
+
+.SuccessButtonTable {
+  border-color: var(--clr-success);
+  color: var(--clr-success);
+}
+
+.Button.SuccessButtonTable:not(:disabled):hover {
+  border-color: #76b360;
+  color: #76b360;
+}
+
+.Secondary {
+  background-color: #F0F0F0;
+  color: var(--clr-primary);
+}

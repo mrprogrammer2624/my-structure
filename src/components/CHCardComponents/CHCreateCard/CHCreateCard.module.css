@@ -1,0 +1,75 @@
+.card {
+  padding: var(--space-lg);
+  border: 1px solid var(--clr-gray-line);
+  background-color: var(--clr-white);
+  border-radius: 16px;
+  height: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s all;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border: 1px solid var(--clr-primary);
+}
+
+.iconWrapper {
+  background-color: var(--clr-gray-washed);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-black);
+  transition: 0.3s all;
+  margin-bottom: 8px;
+  width: 52px;
+  height: 52px;
+}
+
+.iconWrapper svg {
+  width: 28px;
+  height: 28px;
+}
+
+.card:hover .iconWrapper {
+  background-color: rgba(var(--clr-primary-RGB), 0.07);
+  color: var(--clr-primary);
+}
+
+.arrowIcon {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 22px;
+  height: 22xpx;
+}
+
+.arrowIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--clr-gray-washed);
+  color: var(--clr-black);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: 15px;
+  margin-bottom: var(--space-md);
+  width: fit-content;
+}
+
+@media (max-width: 1279px) {
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .iconWrapper svg {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,79 @@
+.cardWrapper {
+  border: 1px solid var(--clr-gray-line);
+  padding: var(--space-md);
+  border-radius: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-white);
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s all;
+}
+
+.popularBadge {
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  transform: translateX(-50%);
+}
+
+.active {
+  border: 1px solid var(--clr-primary);
+}
+
+.active .price {
+  color: var(--clr-primary);
+}
+
+.img {
+  width: 52px;
+  height: 52px;
+  margin-right: var(--space-md);
+}
+
+.title {
+  color: var(clr-black);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.rates {
+  margin-left: auto;
+  color: var(--clr-black);
+  gap: var(--space-sm);
+  text-align: right;
+}
+
+.price {
+  line-height: 1;
+  font-weight: 400;
+}
+
+.period {
+  color: var(--clr-gray-dark);
+  font-weight: 400;
+}
+
+.planDetails {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: var(--space-md);
+  color: var(--clr-black);
+}
+
+.detail {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% / 4);
+}
+
+@media (hover: hover) {
+  .cardWrapper:hover {
+    transform: scale(1.025);
+  }
+}

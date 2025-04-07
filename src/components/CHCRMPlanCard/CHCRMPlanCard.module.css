@@ -1,0 +1,29 @@
+.cardWrapper {
+  border: 1px solid var(--clr-gray-line);
+  border-radius: 16px;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.imgWrapper {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: var(--clr-gray-washed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgWrapper img {
+  width: 20px;
+  height: 20px;
+}
+
+.labelDisabled {
+  color: var(--clr-gray-light);
+  /* pointer-events: none; */
+  cursor: not-allowed;
+}

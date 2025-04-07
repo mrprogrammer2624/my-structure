@@ -1,0 +1,29 @@
+.tableWrapper {
+  border-radius: 24px;
+  padding: 0 var(--space-md);
+  margin-top: var(--space-lg);
+  background-color: var(--clr-gray-washed);
+}
+
+.tableWrapper > table {
+  width: 100%;
+}
+
+.tableWrapper > table tr td:first-child {
+  text-transform: uppercase;
+}
+
+.tableWrapper > table tr td {
+  padding: var(--space-md) 0;
+  color: var(--clr-gray-dark);
+}
+
+.tableWrapper > table tr:not(:last-child) td {
+  border-bottom: 1px solid var(--clr-gray-line);
+}
+
+.tableWrapper > table td:nth-child(2) {
+  text-align: right;
+  color: var(--clr-black);
+  font-weight: 500;
+}

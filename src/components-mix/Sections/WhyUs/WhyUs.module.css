@@ -1,0 +1,70 @@
+.wrapper {
+  grid-template-columns: 2.5fr 440px;
+  gap: 4rem;
+}
+
+.imgWrapper {
+  --bs-aspect-ratio: 50%;
+  background-image: url(../../../assets/images/cover/law-and-order.png);
+  background-color: var(--clr-white-light);
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.imgWrapperBottom {
+  grid-template-columns: repeat(2, 1fr) 440px;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.card {
+  padding: 6.2rem 6rem;
+  gap: var(--space-2xl);
+}
+
+.listWrapper {
+  gap: var(--text-lg);
+}
+
+.listWrapper li {
+  gap: var(--space-2xl);
+}
+
+.IconsWrapper {
+  width: 100px;
+  height: 100px;
+  margin-right: var(--space-2xl);
+  background: rgba(246, 246, 246, 0.48);
+}
+
+.CardSecond {
+  padding: var(--space-2xl) var(--space-md);
+}
+
+@media (max-width: 1279px) {
+  .imgWrapperBottom {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .imgWrapperBottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .wrapper,
+  .imgWrapperBottom {
+    grid-template-columns: 1fr;
+  }
+}

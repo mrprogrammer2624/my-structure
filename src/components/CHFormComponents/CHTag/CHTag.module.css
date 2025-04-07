@@ -1,0 +1,20 @@
+.premium {
+  background: linear-gradient(94deg, #ffa800 0%, #ffdd59 100.32%);
+  color: var(--clr-white);
+}
+
+.tag {
+  padding: 3px var(--space-md);
+  border-radius: calc(var(--space-2xl) + 1px);
+  line-height: 1;
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.primary {
+  border-color: var(--clr-primary);
+  color: transparent;
+  background: var(--clr-primary-gradient);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

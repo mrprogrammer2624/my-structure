@@ -1,0 +1,33 @@
+.footerWrapper {
+  padding-top: 314px;
+}
+
+.divider {
+  border-block-start: 1px solid var(--clr-white-light);
+}
+
+.footerLink {
+  gap: 4.6rem;
+}
+
+.logo {
+  gap: var(--space-lg);
+}
+
+.logoWrapper {
+  width: 60px;
+  height: 60px;
+}
+
+.socialMedia {
+  gap: 3.2rem;
+}
+
+.socialMediaIcons {
+  width: 26px;
+  height: 26px;
+}
+
+.socialMediaIcons:hover {
+  color: var(--clr-golden);
+}

@@ -1,0 +1,74 @@
+.sider {
+  height: 100vh;
+  border-right: 1px solid #E6EFF5;
+}
+
+.sider :global .ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding: var(--space-md);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.siderBtn {
+  flex: 0 0 auto;
+  margin: 0 var(--space-xl);
+}
+
+.menu {
+  height: 100%;
+  overflow: auto;
+}
+
+.menu :global .ant-menu-item {
+  height: 60px;
+  padding: 10px 20px 10px 40px !important;
+  font-size: var(--text-2xl);
+  font-weight: 500;
+}
+
+.menu :global .ant-menu-title-content {
+  margin-left: var(--space-2xl);
+}
+
+.menu:global.ant-menu-inline-collapsed .ant-menu-item {
+  padding: 10px 20px !important;
+}
+
+.menu a:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 6px;
+  background-color: var(--clr-primary);
+  left: 0;
+  top: 0;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.menu a:global.active:after {
+  opacity: 1;
+}
+
+.link {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 575px) {
+  .sider {
+    position: fixed !important;
+    left: -100%;
+    z-index: 1;
+  }
+}

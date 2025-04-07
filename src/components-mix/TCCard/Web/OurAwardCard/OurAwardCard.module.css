@@ -1,0 +1,9 @@
+.awardCardContent {
+  gap: var(--space-md);
+}
+
+.awardCardLogo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 3.2rem;
+}

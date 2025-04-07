@@ -1,0 +1,119 @@
+.comingSoonContainer {
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: var(--clr-gradient);
+  color: var(--clr-white);
+}
+
+.comingSoonContent {
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Countdown Section */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.countdownUnit {
+  text-align: center;
+}
+
+.countdownValue {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.countdownLabel {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+/* Form */
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.emailInput {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  placeholder: white;
+  width: 100%;
+  max-width: 16rem;
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.socialIcon {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #d1d5db;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

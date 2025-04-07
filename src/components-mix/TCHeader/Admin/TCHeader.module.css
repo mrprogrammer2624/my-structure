@@ -1,0 +1,30 @@
+.header {
+  z-index: 999;
+}
+
+.header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6eff5;
+  position: relative;
+  padding: var(--space-md) calc(var(--space-xl) * 2);
+}
+
+.header .collapseBtn {
+  z-index: 999;
+}
+
+.headerLeft {
+  gap: var(--space-md);
+}
+
+.collapsedMobile {
+  left: 10px;
+}
+
+@media (max-width: 575px) {
+  .collapsedMobileTrue {
+    left: 80px;
+  }
+}

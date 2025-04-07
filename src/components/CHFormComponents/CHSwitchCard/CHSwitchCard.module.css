@@ -1,0 +1,5 @@
+.switchCardBordered {
+  border: 1px solid var(--clr-gray-line);
+  border-radius: var(--text-sm);
+  padding: calc(var(--space-md) - 2px) var(--space-md);
+}

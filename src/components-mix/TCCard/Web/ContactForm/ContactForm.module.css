@@ -1,0 +1,31 @@
+.wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+  border-radius: var(--space-lg);
+  margin-top: 3.2rem;
+}
+
+.form {
+  padding: 5rem;
+  border-radius: 16px;
+  gap: 2.4rem;
+}
+
+.info {
+  padding: 5rem;
+  border-radius: var(--space-lg);
+  gap: 4rem;
+}
+
+.infoWrapper {
+  gap: var(--space-xl);
+}
+
+.infoIcons {
+  padding: var(--space-lg);
+  border: 1px solid rgba(var(--clr-white-rgb), 0.2);
+}
+
+.infoText {
+  gap: calc(var(--space-sm) + 2px);
+}

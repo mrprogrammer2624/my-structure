@@ -1,0 +1,36 @@
+.label {
+  composes: label from "../CHInput/CHInput.module.css";
+}
+
+.datepicker {
+  composes: inputWrap from "../CHInput/CHInput.module.css";
+  width: 100%;
+}
+
+.suffixIcon {
+  composes: passwordIcon from "../CHInput/CHInput.module.css";
+}
+
+.datepicker :global .ant-picker-clear {
+  inset: unset;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.errorMessage {
+  margin-top: var(--space-xs);
+  color: var(--clr-error);
+  font-size: var(--text-lg);
+}
+
+@media (max-width: 1699px) {
+  .datepicker {
+    composes: inputWrap from "../CHInput/CHInput.module.css";
+  }
+}
+
+@media (max-width: 767px) {
+  .datepicker {
+    composes: inputWrap from "../CHInput/CHInput.module.css";
+  }
+}

@@ -1,0 +1,25 @@
+.titleContainer {
+  gap: var(--space-2xl);
+  max-width: 115.2rem;
+}
+
+.mainTitle {
+  max-width: 80rem !important;
+}
+
+.title {
+  gap: var(--space-md);
+}
+
+
+.titleContainerSpace {
+  margin-bottom: 6.5rem;
+}
+
+.labelTag {
+  background-color: rgba(var(--clr-golden-rgb), 0.1);
+  width: fit-content;
+  padding: 0.8rem 2rem;
+  border-radius: 1.6rem;
+  line-height: 1.3;
+}

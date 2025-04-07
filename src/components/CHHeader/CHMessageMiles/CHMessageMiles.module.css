@@ -1,0 +1,19 @@
+.pointProgressWrapper {
+  height:var(--space-sm);
+  border-radius:var(--space-sm);
+  background-color: var(--clr-gray-washed);
+  position: relative;
+}
+.pointProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 2;
+  border-radius:var(--space-sm);
+  display: block;
+}
+.messageMiles :global .ant-popover-inner {
+  padding:var(--space-sm) calc(var(--space-2xl) + 1px);
+  border-radius: 0px var(--space-lg) var(--space-lg) var(--space-lg);
+}

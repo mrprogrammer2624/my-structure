@@ -1,0 +1,8 @@
+.count {
+  font-size: var(--text-3xl);
+  color: var(--clr-black);
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

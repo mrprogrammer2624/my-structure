@@ -1,0 +1,174 @@
+.boardCard {
+  position: relative;
+  display: inline-block;
+  --positionSize: 9.5vw;
+}
+
+.boardCardImg {
+  position: relative;
+}
+
+.first .boardCardImg {
+  width: calc(var(--positionSize) + 80px);
+  height: calc(var(--positionSize) + 80px);
+}
+
+.second .boardCardImg {
+  width: calc(var(--positionSize) + 20px);
+  height: calc(var(--positionSize) + 20px);
+}
+
+.third .boardCardImg {
+  width: var(--positionSize);
+  height: var(--positionSize);
+}
+
+.boardCardImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.boardPosition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  border-radius: 50%;
+  outline: var(--space-xs) solid var(--clr-white);
+  z-index: 1;
+  background: url("./../../../assets/images/leading-boards/position-1.jpg")
+    center center no-repeat;
+  background-position: cover;
+}
+
+.first .boardPosition {
+  font-size: var(--text-4xl);
+}
+
+.second .boardPosition,
+.third .boardPosition {
+  font-size: var(--text-3xl);
+  width: 40px;
+  height: 40px;
+}
+
+.second .boardPosition {
+  background-image: url("./../../../assets/images/leading-boards/position-2.jpg");
+}
+
+.third .boardPosition {
+  background-image: url("./../../../assets/images/leading-boards/position-3.jpg");
+}
+
+.boardContent {
+  margin: -35px auto 0;
+  border-radius: var(--space-lg);
+  border: 1px solid var(--clr-gray-line);
+  width: 100%;
+  padding: calc(var(--space-sm) + 2px) calc(var(--space-lg) + 2px);
+  position: relative;
+  z-index: 1;
+  max-width: 170px;
+}
+
+@media (max-width: 991px) {
+  .boardCard {
+    --positionSize: 100px;
+  }
+
+  .first .boardCardImg {
+    width: calc(var(--positionSize) + 50px);
+    height: calc(var(--positionSize) + 50px);
+  }
+
+  .second .boardCardImg {
+    width: calc(var(--positionSize) + 10px);
+    height: calc(var(--positionSize) + 10px);
+  }
+}
+
+@media (max-width: 575px) {
+  .first {
+    order: 1;
+  }
+
+  .second {
+    order: 2;
+  }
+
+  .third {
+    order: 3;
+  }
+
+  .boardCardImg {
+    flex-shrink: 0;
+  }
+
+  .first .boardCardImg {
+    width: var(--positionSize);
+    height: var(--positionSize);
+  }
+
+  .second .boardCardImg {
+    width: var(--positionSize);
+    height: var(--positionSize);
+  }
+
+  .first .boardPosition {
+    font-size: var(--text-3xl);
+  }
+
+  .first .boardPosition,
+  .second .boardPosition,
+  .third .boardPosition {
+    position: static;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .boardCard {
+    --positionSize: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .boardCard:last-child {
+    margin-bottom: 0;
+  }
+
+  .boardContent {
+    margin: 0;
+    width: fit-content;
+    margin-left: 15px;
+    text-align: left;
+    border: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 413px) {
+  .boardCard {
+    --positionSize: 40px;
+  }
+
+  .boardContent {
+    margin-left: 10px;
+  }
+
+  .boardContent h4 {
+    font-size: 14px;
+  }
+}

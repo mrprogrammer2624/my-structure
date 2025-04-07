@@ -1,0 +1,14 @@
+.table :global [class^="ant-table"],
+.table :global [class*=" ant-table"] {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.table:global.ant-table-wrapper .ant-table-thead th {
+  padding: var(--space-md) var(--space-xl);
+  font-weight: 500;
+}
+
+.table:global.ant-table-wrapper .ant-table-tbody td {
+  padding: var(--space-md) var(--space-xl);
+}

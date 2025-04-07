@@ -1,0 +1,14 @@
+.tagWrapper {
+  background-color: var(--clr-gray-washed);
+  padding: var(--space-md);
+  border-radius: 50px;
+  display: flex;
+  gap: 8px;
+  width: max-content;
+}
+
+.tagWrapper img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}

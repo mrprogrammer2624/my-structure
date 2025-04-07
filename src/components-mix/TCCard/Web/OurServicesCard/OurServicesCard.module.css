@@ -1,0 +1,10 @@
+.card {
+  padding: 5rem 4.8rem;
+  max-width: 420px;
+  flex: 0 0 auto;
+}
+
+.cardTitle {
+  margin-top: 2.4rem;
+  margin-bottom: var(--space-sm);
+}

@@ -1,0 +1,22 @@
+.accordion > :global(.ant-collapse-item > .ant-collapse-header) {
+  padding: var(--space-lg) 0;
+}
+
+.accordion
+  > :global(
+    .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box
+  ) {
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: var(--space-lg);
+  color: var(--clr-gray-dark);
+}
+
+.accordion > :global.ant-collapse-item:not(:last-child) {
+  border-bottom: 1px solid var(--clr-gray-line);
+}
+
+.accordion :global .ant-collapse-header-text {
+  font-size: var(--text-2xl);
+  color: var(--clr-black);
+}

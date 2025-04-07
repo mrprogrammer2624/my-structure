@@ -1,0 +1,19 @@
+.tagsWrap {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tagItem {
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--clr-gray-washed);
+  width: fit-content;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--clr-black);
+}

@@ -1,0 +1,22 @@
+.headerProfile {
+  cursor: pointer;
+}
+
+.headerProfile h4 {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerProfileAvatar {
+  width: 56px;
+  height: 56px;
+}
+
+@media screen and (max-width: 1399px) {
+  .headerProfileAvatar {
+    width: 45px;
+    height: 45px;
+  }
+}

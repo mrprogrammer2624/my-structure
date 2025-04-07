@@ -1,0 +1,14 @@
+
+root = true
+
+[*]
+charset = utf-8 # Enforces UTF-8 encoding for all files.
+indent_style = space # Enforces spaces for indentation.
+indent_size = 4 # Sets the indentation size to 4 spaces.
+end_of_line = lf # Enforces Unix-style line endings(LF).
+trim_trailing_whitespace = true # Removes any whitespace characters that are at the end of a line.
+insert_final_newline = true # Ensures that the file ends with a newline.
+
+[*.md]
+trim_trailing_whitespace = false # Disables the removal of trailing whitespace in Markdown files.
+

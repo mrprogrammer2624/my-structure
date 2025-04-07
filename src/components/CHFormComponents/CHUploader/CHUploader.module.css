@@ -1,0 +1,92 @@
+.uploaderWrap {
+  position: relative;
+}
+
+.label {
+  composes: label from "../CHInput/CHInput.module.css";
+}
+
+.uploader {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: var(--space-2xl);
+  border-radius: var(--text-sm);
+  background-color: var(--clr-gray-washed);
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23333' stroke-width='2' stroke-dasharray='4%2c 4' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+}
+
+.uploaderContent {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.uploaderIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--clr-black);
+  margin-bottom: var(--space-md);
+}
+
+.uploaderInput {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.errorMessage {
+  composes: errorMessage from "../CHInput/CHInput.module.css";
+}
+
+.previewGrid {
+  margin-top: var(--space-xl);
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 10px;
+}
+
+.removePreviewBtn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  left: unset;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  z-index: 1;
+  cursor: pointer;
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+}
+
+.singlePreview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deletePreviewSingle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+}

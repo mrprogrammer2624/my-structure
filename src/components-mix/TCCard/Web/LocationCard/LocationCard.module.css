@@ -1,0 +1,17 @@
+.Card {
+  padding: calc(var(--space-2xl) + 2px) var(--space-lg);
+  border-radius: var(--space-lg);
+}
+
+.LeftCard {
+  gap: var(--space-lg);
+  max-width: 420px;
+}
+
+.LeftCardContent {
+  gap: calc(var(--space-md) - 2px);
+}
+
+.MapView {
+  gap: var(--space-md);
+}

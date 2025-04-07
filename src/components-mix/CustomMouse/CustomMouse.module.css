@@ -1,0 +1,47 @@
+/* Base cursor styles */
+.mouseCursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  contain: layout style size;
+  pointer-events: none;
+  transition: color 0.3s 0s;
+}
+
+/* Inner cursor (dot) */
+.innerCursor {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  display: block;
+  width: 48px;
+  height: 48px;
+  transform: scale(0.3);
+  background: currentColor;
+  border-radius: 50%;
+  transition: transform 0.3s, opacity 0.1s;
+}
+
+/* Cursor text */
+.cursorText {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Make sure the cursor is still visible on dark backgrounds */
+@media (prefers-color-scheme: dark) {
+  .innerCursor {
+    background: #fff;
+  }
+}

@@ -1,0 +1,85 @@
+.headerWrapper {
+  background-color: var(--clr-black);
+  position: fixed;
+  width: calc(100% - var(--sidebarOffset));
+  z-index: 9;
+  top: 0;
+  right: 1px;
+  margin-left: var(--sidebarOffset);
+  transform: translateX(0);
+  transition: 0.3s transform;
+}
+
+.headerWrapper:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 150 150' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fillRule='evenodd' clipRule='evenodd' d='M-0.000976562 0V150H149.999C67.1563 150 -0.000976562 82.8427 -0.000976562 0Z' fill='%232b2b2b' /%3E%3C/svg%3E");
+  background-position: bottom left;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  transform: translateY(-100%);
+  background-size: contain;
+}
+
+.header {
+  background-color: var(--clr-white);
+  border-radius: calc(var(--space-2xl) * 2) 0 0;
+  height: var(--headerHeight);
+  padding: var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1px;
+}
+
+.headerWrapper.expanded {
+  transform: translateX(var(--sidebarOffset));
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerRight :global .ant-input-affix-wrapper {
+  background-color: var(--clr-gray-washed);
+  border: none;
+  height: 56px;
+  width: 300px;
+}
+
+.headerDivider {
+  height: 24px;
+}
+
+@media (max-width: 1399px) {
+  .headerRight :global .ant-input-affix-wrapper {
+    height: 45px;
+  }
+}
+
+@media (max-width: 991px) {
+  .headerWrapper {
+    width: calc(100% - 60px);
+  }
+
+  .header {
+    border-radius: 0;
+  }
+
+  .headerWrapper:after {
+    content: unset;
+  }
+
+  .header {
+    margin-left: 0;
+  }
+
+  .headerWrapper.expanded {
+    transform: none;
+  }
+}

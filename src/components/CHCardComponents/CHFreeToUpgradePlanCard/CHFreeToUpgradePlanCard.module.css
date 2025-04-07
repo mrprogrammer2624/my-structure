@@ -1,0 +1,55 @@
+.applicationAd {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+  background-color: var(--clr-gray-washed);
+  padding: calc(var(--space-xl) + 2px) var(--space-2xl);
+  border-radius: var(--space-lg);
+}
+
+.demoInfo {
+  font-weight: 400;
+  color: var(--clr-gray);
+  max-width: 350px;
+}
+
+.demoBtnGroup {
+  display: flex;
+  gap: var(--space-md);
+}
+
+@media (max-width: 1279px) {
+  .applicationAd {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .applicationAd {
+    padding: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .demoBtnGroup {
+    width: 100%;
+  }
+
+  .demoBtnGroup button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  p.demoInfo {
+    font-size: 12px;
+  }
+
+  .demoBtnGroup {
+    flex-wrap: wrap;
+  }
+}

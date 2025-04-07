@@ -1,0 +1,16 @@
+.menu {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.navIcon {
+  margin-right: calc(var(--space-sm) + 2px);
+}
+
+.menuDropdown :global .ant-dropdown-menu {
+  border-radius: 0 var(--space-lg) var(--space-lg) var(--space-lg);
+}
+
+.menuDropdown :global .ant-dropdown-menu .ant-dropdown-menu-title-content .active {
+  color: var(--clr-primary);
+}

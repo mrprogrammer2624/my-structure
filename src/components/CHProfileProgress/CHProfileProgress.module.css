@@ -1,0 +1,19 @@
+.progressWrapper {
+  width: 177px;
+}
+
+.progressWrapper :global .ant-progress-bg {
+  height: var(--space-md) !important;
+}
+
+@media (max-width: 1279px) {
+  .progressWrapper {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 767px) {
+  .progressWrapper {
+    width: 100%;
+  }
+}

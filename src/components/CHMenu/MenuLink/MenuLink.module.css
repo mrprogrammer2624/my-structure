@@ -1,0 +1,36 @@
+.navLink {
+  line-height: 1;
+  color: var(--clr-gray-dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg) var(--space-md) calc(calc(var(--space-md) * 2) + var(--space-sm));
+}
+
+.navLink:focus-visible {
+  outline: 2px solid var(--clr-white)
+}
+
+.navLink.active {
+  color: var(--clr-white);
+  background: var(--clr-primary-gradient);
+}
+
+.navLink .navText {
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.navLink .menuExpanded {
+  opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .navLink {
+    padding: 8px 16px;
+  }
+
+  .navLink .navText {
+    margin-left: 5px;
+  }
+}

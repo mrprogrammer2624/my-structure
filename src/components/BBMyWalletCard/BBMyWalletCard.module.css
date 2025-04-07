@@ -1,0 +1,16 @@
+.myWallet {
+  padding: 0;
+}
+
+.myWalletStats {
+  padding: var(--space-2xl);
+}
+
+.myWalletBtnWrapper {
+  padding: var(--space-md) var(--space-2xl);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.myWalletBtn {
+  background-color: rgba(255, 255, 255, 0.20);
+}

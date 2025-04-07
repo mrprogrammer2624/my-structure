@@ -1,0 +1,56 @@
+.label {
+  composes: label from "../CHInput/CHInput.module.css";
+}
+
+.select {
+  height: auto;
+  width: 85px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.select :global .ant-select-selection-item,
+.select :global .ant-select-selection-search-input {
+  font-size: var(--text-lg);
+}
+
+.select:global:not(.ant-select-customize-input) .ant-select-selector {
+  border-right-color: transparent;
+}
+
+.flag {
+  width: 25px;
+  height: 18px;
+  margin-right: calc(var(--space-sm) + 2px);
+  border-radius: var(--space-xs);
+  object-fit: cover;
+}
+
+.numberInput {
+  position: relative;
+  border-left-color: transparent !important;
+  width: 100%;
+}
+
+.numberInput::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 72%;
+  width: 1px;
+  background-color: var(--clr-gray-line);
+  transform: translateY(-50%);
+}
+
+.numberInput :global .ant-input-number-handler-wrap {
+  display: none;
+}
+
+.errorMessage {
+  composes: errorMessage from "../CHInput/CHInput.module.css";
+}
+
+.inputContainer {
+  width: 100%;
+}

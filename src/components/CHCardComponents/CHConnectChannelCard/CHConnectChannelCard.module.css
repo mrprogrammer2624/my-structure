@@ -1,0 +1,8 @@
+.cardContainer {
+  border: 1px solid var(--clr-gray-line);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  border-radius: var(--space-2xl);
+}

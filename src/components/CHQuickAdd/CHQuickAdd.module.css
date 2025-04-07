@@ -1,0 +1,48 @@
+.quickAddPopover {
+  max-width: 260px;
+}
+
+.quickAddPopover :global .ant-popover-inner {
+  border-radius: var(--space-lg) 0 var(--space-lg) var(--space-lg);
+  border: 1px solid var(--clr-gray-line);
+  box-shadow: 0px 0px 50px 0px #0000000d;
+  padding: var(--space-md);
+}
+
+.quickAddRadioGroup {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 240px;
+}
+
+.quickAddRadio {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quickAddRadio:not(:last-child) {
+  border-bottom: 1px solid var(--clr-gray-line);
+}
+
+.quickAddRadio :global span.ant-radio + * {
+  margin-right: auto;
+  padding-left: 0;
+}
+
+.quickAddAvatar h5 {
+  font-size: var(--text-lg);
+  font-weight: 400;
+}
+
+.image {
+  width: 32px;
+  height: 32px;
+}
+
+.image img {
+  width: 32px;
+  height: 32px;
+}

@@ -1,0 +1,50 @@
+:root {
+  /* Fonts Family */
+  --font-primary: "Poppins", Arial, sans-serif, system-ui, -apple-system;
+
+  /* RGBA */
+  --clr-primary-rgb: 14, 171, 235;
+  --clr-secondary-rgb: 113, 142, 191;
+  --clr-gray-rgb: 79, 79, 79;
+
+  /* Colors */
+  --clr-primary: rgb(var(--clr-primary-rgb), 1);
+  --clr-secondary: rgb(var(--clr-secondary-rgb), 1);
+  /* --clr-secondary: rgb(var(--clr-secondary-rgb), 0.5); */
+
+  --clr-white: #ffffff;
+  --clr-black: #141414;
+
+  --clr-success: #39973d;
+  --clr-warning: #ffb931;
+  --clr-danger: #e7433c;
+  --clr-Link: #5678e9;
+
+  /* Gradients Colors */
+
+  /* Header Height */
+  --header-height: 8rem;
+
+  /* sidebar width */
+  --sidebar-width: 280px;
+
+  /* Global Font Size */
+  --html: 10px;
+
+  /* Font  Size */
+  --text-5xl: 5rem;
+  --text-4xl: 3.4rem;
+  --text-3xl: 20px;
+  --text-2xl: 18px;
+  --text-xl: 16px;
+  --text-lg: 14px;
+  --text-sm: 12px;
+
+  /*  Spacing */
+  --space-2xl: 24px;
+  --space-xl: 20px;
+  --space-lg: 16px;
+  --space-md: 12px;
+  --space-sm: 8px;
+  --space-xs: 4px;
+}

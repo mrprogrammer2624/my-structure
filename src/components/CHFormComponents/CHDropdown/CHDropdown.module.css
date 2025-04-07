@@ -1,0 +1,78 @@
+.dropdownSubMenu,
+.dropdownMenu {
+  width: 200px;
+}
+
+.dropdown :global .ant-dropdown-menu,
+.dropdownSubMenu :global .ant-dropdown-menu.ant-dropdown-menu-sub {
+  padding: 0;
+  border-radius: var(--space-lg);
+  border: 1px solid var(--clr-gray-line);
+  box-shadow: 0px 0px 50px 0px #0000000D;
+  /* max-height: 300px; */
+  overflow: hidden;
+}
+
+.dropdownSubMenu :global .ant-dropdown-menu .ant-dropdown-menu-item,
+.dropdown :global .ant-dropdown-menu .ant-dropdown-menu-item {
+  border-radius: 0;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--clr-gray-washed);
+}
+
+.dropdown :global .ant-dropdown-menu .ant-dropdown-menu-submenu-title {
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  padding: var(--space-md) 24px var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--clr-gray-washed);
+}
+
+.dropdown :global .ant-dropdown-menu .ant-dropdown-menu-submenu:last-child .ant-dropdown-menu-submenu-title,
+.dropdownSubMenu :global .ant-dropdown-menu .ant-dropdown-menu-item:last-child,
+.dropdown :global .ant-dropdown-menu .ant-dropdown-menu-item:last-child {
+  border-bottom: 0;
+}
+
+.dropdown :global .ant-dropdown-menu-item-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.dropdownSubMenu :global .ant-dropdown-menu-item-disabled img {
+  filter: grayscale(100%);
+}
+
+.dropdown :global .ant-dropdown-menu .ant-dropdown-menu-submenu-open {
+  background-color: rgba(43, 43, 43, 0.04);
+}
+
+/* border radius as per placements */
+.dropdownSubMenu:global.ant-dropdown-menu-submenu-placement-leftBottom .ant-dropdown-menu,
+.dropdownSubMenu:global.ant-dropdown-menu-submenu-placement-topRight .ant-dropdown-menu,
+.dropdown:global.ant-dropdown-placement-leftBottom .ant-dropdown-menu,
+.dropdown:global.ant-dropdown-placement-topRight .ant-dropdown-menu {
+  border-bottom-right-radius: 0;
+}
+
+.dropdownSubMenu:global.ant-dropdown-menu-submenu-placement-rightBottom .ant-dropdown-menu,
+.dropdownSubMenu:global.ant-dropdown-menu-submenu-placement-topLeft .ant-dropdown-menu,
+.dropdown:global.ant-dropdown-placement-rightBottom .ant-dropdown-menu,
+.dropdown:global.ant-dropdown-placement-topLeft .ant-dropdown-menu {
+  border-bottom-left-radius: 0;
+}
+
+.dropdownSubMenu:global.ant-dropdown-menu-submenu-placement-leftTop .ant-dropdown-menu,
+.dropdownSubMenu:global.ant-dropdown-menu-submenu-placement-bottomRight .ant-dropdown-menu,
+.dropdown:global.ant-dropdown-placement-leftTop .ant-dropdown-menu,
+.dropdown:global.ant-dropdown-placement-bottomRight .ant-dropdown-menu {
+  border-top-right-radius: 0;
+}
+
+.dropdownSubMenu:global.ant-dropdown-menu-submenu-placement-rightTop .ant-dropdown-menu,
+.dropdownSubMenu:global.ant-dropdown-menu-submenu-placement-bottomTop .ant-dropdown-menu,
+.dropdown:global.ant-dropdown-placement-rightTop .ant-dropdown-menu,
+.dropdown:global.ant-dropdown-placement-bottomLeft .ant-dropdown-menu {
+  border-top-left-radius: 0;
+}

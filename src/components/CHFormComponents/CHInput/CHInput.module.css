@@ -1,0 +1,151 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+.label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  color: var(--clr-gray);
+  font-size: var(--text-lg);
+}
+
+.inputWrap,
+.numberInputWrap {
+  height: 52px;
+  line-height: 1;
+  font-size: var(--text-lg);
+  font-weight: 400;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--space-md);
+  border-color: var(--clr-gray-line);
+  align-items: center;
+}
+
+.inputWrap.small {
+  height: 40px;
+}
+
+.inputWrap.small .inputPrefix,
+.inputWrap.small .inputSuffix svg {
+  width: 18px;
+  height: 18px;
+}
+
+.inputWrap.small .inputPrefix svg {
+  width: 100%;
+  height: 100%;
+}
+
+.inputWrap:global(.ant-input-affix-wrapper-disabled) {
+  border: none;
+  background-color: var(--clr-gray-washed);
+}
+
+.inputWrap:focus,
+.inputWrap:focus-within {
+  box-shadow: none;
+}
+
+.input {
+  color: var(--clr-black);
+  font-family: var(--font-primary);
+  border-radius: calc(var(--space-xs) + 2px);
+  background-color: transparent;
+}
+
+.input::placeholder {
+  color: var(--clr-gray-dark);
+}
+
+.errorMessage {
+  margin-top: var(--space-xs);
+  color: var(--clr-error);
+  font-size: var(--text-lg);
+}
+
+.passwordIcon {
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.passwordIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.numberInputWrap {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.parentClassName .numberInputWrap input {
+  padding: 0;
+  border-radius: 0;
+}
+
+.parentClassName :global .ant-input-number-input-wrap {
+  width: 100%;
+  font-size: var(--text-lg);
+}
+
+.numberInputWrap :global .ant-input-number-handler-wrap {
+  display: none;
+}
+
+.timeRangePicker {
+  width: 100%;
+}
+
+.inputWrap :global .ant-input-clear-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+}
+
+.textArea {
+  overflow: hidden;
+  border-color: var(--clr-gray-line);
+  border-radius: var(--space-md);
+}
+
+.input.textArea :global textarea.ant-input {
+  padding: var(--space-sm) 26px var(--space-sm) var(--space-md);
+}
+
+.input.textArea :global textarea.ant-input::placeholder {
+  color: var(--clr-gray-dark);
+}
+
+@media (max-width: 1699px) {
+  .inputWrap,
+  .numberInputWrap {
+    height: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inputWrap,
+  .numberInputWrap {
+    height: 40px;
+  }
+
+  .passwordIcon,
+  .inputPrefix svg,
+  .inputSuffix svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .inputWrap :global .ant-input-clear-icon,
+  .inputWrap :global .ant-input-clear-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,28 @@
+.label {
+  composes: label from "../CHInput/CHInput.module.css";
+}
+
+.otpWrapper {
+  gap: 25px;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.otpInput {
+  width: 52px !important;
+  height: 52px;
+}
+
+@media (max-width: 1439px) {
+  .otpInput {
+    width: 45px !important;
+    height: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .otpInput {
+    width: 40px !important;
+    height: 40px;
+  }
+}

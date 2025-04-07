@@ -1,0 +1,181 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  transition: 0.3s all;
+  outline-offset: var(--space-xs);
+}
+
+.small {
+  font-size: var(--text-lg);
+  min-height: 36px;
+  padding: calc(var(--space-xs) + 1px) var(--text-xs);
+  border-radius: var(--space-md);
+  min-width: 100px;
+  font-weight: 400;
+}
+
+.medium {
+  font-size: var(--text-xl);
+  min-height: 44px;
+  padding: calc(var(--space-sm) - 1px) var(--space-xl);
+  border-radius: var(--space-md);
+}
+
+.large {
+  font-size: var(--text-2xl);
+  min-height: 48px;
+  padding: calc(var(--space-sm) + 2px) var(--space-xl);
+  border-radius: var(--space-md);
+  min-width: 100px;
+}
+
+.small.hasDimensions,
+.medium.hasDimensions,
+.large.hasDimensions {
+  min-height: auto;
+}
+
+.primary {
+  color: var(--clr-white);
+  background-image: var(--clr-primary-gradient);
+  border: none;
+}
+
+.danger {
+  color: var(--clr-error);
+  background-color: #ed37461a;
+  border: none;
+}
+
+.danger:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-error);
+  border: none;
+}
+
+.primaryOutlined {
+  background-color: transparent;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+}
+
+.primaryOutlined:hover {
+  background-color: rgb(72 119 255 / 20%);
+}
+
+.primaryOutlined:active {
+  background-color: rgb(72 119 255 / 30%);
+}
+
+.secondary {
+  background-color: var(--clr-gray-washed);
+  color: var(--clr-black);
+  border: none;
+}
+
+.secondaryOutlined {
+  background-color: transparent;
+  border: 1px solid var(--clr-gray-line);
+}
+
+.secondary:hover,
+.secondaryOutlined:hover {
+  background-color: #ebebeb;
+}
+
+.secondary:active,
+.secondaryOutlined:active {
+  background-color: #dfdfdf;
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: var(--clr-gray-dark);
+  background-image: none;
+  border: none;
+  background-color: var(--clr-gray-washed);
+}
+
+.loadingIcon,
+.icon {
+  line-height: 1;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.small .loadingIcon,
+.small .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.loadingIcon {
+  animation: spin infinite linear forwards 1s;
+}
+
+.shape {
+  min-width: auto;
+  min-height: auto;
+  padding: calc(var(--space-xs) + 1px);
+}
+
+.shapeCircle {
+  border-radius: 50%;
+}
+
+.shapeRoundedSquare {
+  border-radius: calc(var(--space-sm) + 2px);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1699px) {
+  .medium {
+    min-height: 40px;
+  }
+
+  .large {
+    min-height: 45px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .shape.hasDimensions {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .shape.hasDimensions svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .medium {
+    min-height: 36px;
+  }
+
+  .large {
+    min-height: 40px;
+  }
+
+  .loadingIcon,
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,33 @@
+.demoWrapper > div {
+  padding: calc(var(--space-xl) * 2);
+  flex: 1;
+}
+
+.demoFormWrapper {
+  border-left: 1px solid var(--clr-gray-line);
+}
+
+.chooseList {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-lg) * 2);
+  margin-top: calc(var(--space-2xl) * 2);
+}
+
+.chooseList > div {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .demoWrapper > div {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .demoWrapper {
+    flex-direction: column;
+  }
+}

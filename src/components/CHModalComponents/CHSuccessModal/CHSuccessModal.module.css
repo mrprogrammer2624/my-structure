@@ -1,0 +1,10 @@
+.successIcon {
+  width: var(--icon-xl);
+  height: var(--icon-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: var(--space-2xl);
+  margin-top: var(--space-lg);
+}

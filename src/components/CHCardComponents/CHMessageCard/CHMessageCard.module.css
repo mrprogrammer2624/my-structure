@@ -1,0 +1,51 @@
+.messageCard {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-gray-washed);
+  padding: var(--space-sm) var(--space-xl) var(--space-sm) var(--space-sm);
+  gap: var(--space-sm);
+  border-radius: var(--space-lg);
+  position: relative;
+}
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-white);
+  border-radius: var(--space-sm);
+}
+
+.iconWrapper svg {
+  width: 32px;
+  height: 32px;
+}
+
+.messageCardClose:global.ant-btn.ant-btn-sm {
+  width: 20px;
+  height: 20px;
+  color: var(--clr-error);
+  border: 0;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.messageCardClose:global.ant-btn.ant-btn-sm svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1439px) {
+  .iconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .iconWrapper svg {
+    width: 26px;
+    height: 26px;
+  }
+}

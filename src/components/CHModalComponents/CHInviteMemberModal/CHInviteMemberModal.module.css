@@ -1,0 +1,30 @@
+.inviteMemberModalScroller {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+.switchCardAccordion {
+  border: 1px solid var(--clr-gray-line);
+}
+
+.switchCardAccordion:global.ant-collapse
+  > .ant-collapse-item
+  > .ant-collapse-header {
+  padding: calc(var(--space-lg) - 3px) var(--space-md);
+}
+
+.switchCardAccordion .accordionList {
+  padding: 0 var(--space-md);
+}
+
+.accordionContentWrap {
+  display: grid;
+  gap: var(--space-md);
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--clr-gray-line);
+  padding-top: var(--space-md);
+}

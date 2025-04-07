@@ -1,0 +1,53 @@
+.cbWrap :global .ant-checkbox-inner {
+  border-radius: 4px;
+  border-color: var(--clr-gray-dark);
+}
+
+.cbWrap:global:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled)
+  .ant-checkbox-inner,
+.cbWrap :global .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--clr-success);
+  border-color: var(--clr-success);
+}
+
+.cbWrap:global:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner {
+  border-color: var(--clr-success);
+}
+
+.disabled :global .ant-checkbox-inner {
+  border: 1px solid var(--clr-gray-light);
+  background-color: transparent;
+}
+
+.Add:global > .ant-checkbox {
+  position: relative;
+}
+.Add:global > .ant-checkbox:not(.ant-checkbox-checked):before {
+  width: 100%;
+  height: 100%;
+  content: "\002B";
+  color: var(--clr-gray-dark);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.small:global > .ant-checkbox,
+.small :global .ant-checkbox-inner {
+  width: 16px;
+  height: 16px;
+}
+.medium:global > .ant-checkbox,
+.medium :global .ant-checkbox-inner {
+  width: 20px;
+  height: 20px;
+}
+
+.large:global > .ant-checkbox,
+.large :global .ant-checkbox-inner {
+  width: 24px;
+  height: 24px;
+}

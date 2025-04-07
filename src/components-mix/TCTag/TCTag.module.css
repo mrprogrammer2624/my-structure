@@ -1,0 +1,26 @@
+.Tag:global.ant-tag {
+  margin: 0;
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  width: max-content;
+}
+
+.DefaultTag:global.ant-tag {
+  padding-right: var(--space-xl);
+  padding-left: var(--space-xl);
+  border-radius: var(--space-lg);
+  font-size: 20px;
+  /* line-height: 26.04px; */
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.PrimaryTag:global.ant-tag {
+  padding-right: var(--space-lg);
+  padding-left: var(--space-lg);
+  border-radius: 3.2rem;
+  font-weight: 600;
+  font-size: 20px;
+  /* line-height: 26.04px; */
+  letter-spacing: -0.03em;
+}

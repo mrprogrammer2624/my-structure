@@ -1,0 +1,49 @@
+.chaaatAIPopover :global .ant-popover-inner {
+  width: 45vw;
+  min-width: 300px;
+  border: 1px solid var(--clr-gray-line);
+  box-shadow: 0px 0px 50px 0px #0000000D;
+  border-radius: var(--space-lg);
+}
+
+.chaaatAIInput {
+  padding: var(--space-md);
+  border-radius: var(--space-lg);
+  border: 1px solid var(--clr-gray-line);
+}
+
+.generateBtn path {
+  fill: var(--clr-white);
+}
+
+.suggested {
+  border-radius: 30px;
+  padding: 2px 8px;
+}
+
+.suggested svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* border radius as per placements */
+.chaaatAIPopover:global.ant-popover-placement-leftBottom .ant-popover-inner,
+.chaaatAIPopover:global.ant-popover-placement-topRight .ant-popover-inner {
+  border-bottom-right-radius: 0;
+}
+
+
+.chaaatAIPopover:global.ant-popover-placement-rightBottom .ant-popover-inner,
+.chaaatAIPopover:global.ant-popover-placement-topLeft .ant-popover-inner {
+  border-bottom-left-radius: 0;
+}
+
+.chaaatAIPopover:global.ant-popover-placement-leftTop .ant-popover-inner,
+.chaaatAIPopover:global.ant-popover-placement-bottomRight .ant-popover-inner {
+  border-top-right-radius: 0;
+}
+
+.chaaatAIPopover:global.ant-popover-placement-rightTop .ant-popover-inner,
+.chaaatAIPopover:global.ant-popover-placement-bottomLeft .ant-popover-inner {
+  border-top-left-radius: 0;
+}

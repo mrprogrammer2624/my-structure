@@ -1,0 +1,13 @@
+.inputsWrapper {
+  margin: var(--space-2xl) 0;
+}
+
+.authenticationButton {
+  margin: calc(var(--space-xl) + var(--space-md)) 0;
+}
+
+.wrapperLastLink {
+  padding-top: var(--space-2xl);
+  border-top: 0.5px solid #E5E5E5;
+  grid-gap: var(--space-sm);
+}

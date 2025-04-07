@@ -1,0 +1,39 @@
+.popoverIcon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.popoverInner :global .ant-popover-inner {
+  border-radius: var(--space-lg);
+  border: 1px solid var(--clr-gray-line);
+  box-shadow: 0px 0px 50px 0px #0000000D;
+}
+
+.popoverBtn {
+  width: 100%;
+  border-radius: var(--space-sm);
+}
+
+
+
+/* border radius as per placements */
+.popoverInner:global.ant-popover-placement-leftBottom .ant-popover-inner,
+.popoverInner:global.ant-popover-placement-topRight .ant-popover-inner {
+  border-bottom-right-radius: 0;
+}
+
+
+.popoverInner:global.ant-popover-placement-rightBottom .ant-popover-inner,
+.popoverInner:global.ant-popover-placement-topLeft .ant-popover-inner {
+  border-bottom-left-radius: 0;
+}
+
+.popoverInner:global.ant-popover-placement-leftTop .ant-popover-inner,
+.popoverInner:global.ant-popover-placement-bottomRight .ant-popover-inner {
+  border-top-right-radius: 0;
+}
+
+.popoverInner:global.ant-popover-placement-rightTop .ant-popover-inner,
+.popoverInner:global.ant-popover-placement-bottomLeft .ant-popover-inner {
+  border-top-left-radius: 0;
+}

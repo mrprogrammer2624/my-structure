@@ -1,0 +1,32 @@
+.errorMessage,
+.label {
+  composes: label from "../TCInput/TCInput.module.css";
+}
+
+.radioButton {
+  grid-gap: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* .radioButton :global .ant-radio-button-wrapper {
+  border-radius: 6px;
+  border: 2px solid #aaaaaa;
+  min-height: 55px;
+  align-self: center;
+  min-width: 10.6rem;
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: #aaaaaa;
+}
+
+.radioButton :global .ant-radio-button-wrapper:hover {
+  color: var(--clr-black);
+}
+
+.radioButton :global .ant-radio-button-wrapper span:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+} */

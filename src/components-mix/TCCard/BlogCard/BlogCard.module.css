@@ -1,0 +1,19 @@
+.card {
+  background: #fff;
+  padding: var(--space-xl);
+  gap: var(--space-2xl);
+}
+
+.imageWrapper {
+  width: 440px;
+  --bs-aspect-ratio: 69.094%;
+}
+
+.BlogParagraph {
+  color: var(--clr-shadow) !important;
+  letter-spacing: -0.03em;
+}
+
+.BlogOwner {
+  letter-spacing: -0.03em;
+}

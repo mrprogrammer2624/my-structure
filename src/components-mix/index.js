@@ -1,0 +1,21 @@
+export { TCButton } from "./TCButton";
+export { TCSidebar } from "./TCSidebar";
+export { TCTable } from "./TCTable";
+export { TCTabs } from "./TCTabs";
+export { Container } from "./Container";
+export { TCTitle } from "./TCTitle";
+export { SwiperSlider } from "./SwiperSlider";
+export { SmoothScroll } from "./SmoothScroll";
+export { TCAccordion } from "./TCAccordion";
+export { ComingSoon } from "./ComingSoon/";
+export { TCLoader } from "./TCLoader";
+export { TCTag } from "./TCTag";
+export { CustomMouse } from "./CustomMouse/";
+export {Vission} from "./VisonMisson/";
+export {CeoIntro} from "./CeoIntro/";
+
+export * from "./TCFooter/";
+export * from "./TCFormComponents";
+export * from "./TCHeader/";
+export * from "./TCCard/";
+export * from "./Sections/";

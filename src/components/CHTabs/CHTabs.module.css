@@ -1,0 +1,127 @@
+.tabs.tabsTop {
+  --tab-item-padding: var(--space-lg);
+}
+
+.tabs.tabsTop :global(.ant-tabs-tab + .ant-tabs-tab) {
+  margin: 0 0 0 var(--space-sm);
+}
+
+.tabs.tabsTop :global .ant-tabs-tab {
+  padding: var(--tab-item-padding);
+  min-width: 150px;
+  justify-content: center;
+  padding: 0;
+}
+
+.tabs.tabsTop :global .ant-tabs-nav-list {
+  border-radius: 100px;
+  padding: var(--space-sm);
+  background-color: var(--clr-white);
+}
+
+.tabs.tabsTop.themeGray :global .ant-tabs-nav-list {
+  background-color: var(--clr-gray-washed);
+}
+
+.tabs.tabsTop > :global(.ant-tabs-nav)::before,
+.tabs.tabsTop > :global(.ant-tabs-nav)::before,
+.tabs.tabsTop > div > :global(.ant-tabs-nav)::before,
+.tabs.tabsTop > div > :global(.ant-tabs-nav)::before {
+  border-bottom: none;
+}
+
+.tabs.tabsTop :global .ant-tabs-tab-btn {
+  position: relative;
+  padding: var(--tab-item-padding);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  line-height: 1;
+  color: var(--clr-gray-dark);
+  font-size: var(--text-xl);
+  text-align: center;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs.tabsTop :global .ant-tabs-tab-btn:focus-visible {
+  box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+
+.tabs.tabsTop :global .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--clr-white);
+  font-weight: 500;
+}
+
+.tabs.tabsTop > :global(.ant-tabs-nav .ant-tabs-ink-bar) {
+  top: calc(var(--tab-item-padding) / 2);
+  background-image: var(--clr-primary-gradient);
+  border-radius: 100px;
+  height: calc(100% - var(--tab-item-padding));
+}
+
+.tabs.tabsLeft > :global.ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0;
+}
+
+.tabs.tabsLeft
+  > :global(.ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane) {
+  padding-left: 0;
+}
+
+.tabs.tabsLeft :global .ant-tabs-tab-btn {
+  font-size: var(--text-xl);
+}
+
+.tabs.tabsLeft > :global.ant-tabs-nav .ant-tabs-tab {
+  padding-left: calc(var(--space-2xl) * 2);
+}
+
+.tabs.tabsLeft :global .ant-tabs-nav-wrap {
+  padding: var(--space-2xl) 0;
+}
+
+.tabs.tabsLeft > :global.ant-tabs-nav .ant-tabs-ink-bar {
+  right: unset;
+  left: 30px;
+  width: 8px;
+  height: 8px !important;
+  border-radius: 50%;
+}
+
+.tabs.tabsLeft > :global.ant-tabs-content-holder {
+  border-left: 1px solid var(--clr-gray-line);
+  overflow: auto;
+}
+
+.removeTabBtn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  color: var(--clr-gray-dark);
+  transition: 0.2s all;
+}
+
+.tabs.tabsTop :global(.ant-tabs-tab.ant-tabs-tab-active) .removeTabBtn {
+  color: var(--clr-white);
+}
+
+@media (max-width: 1699px) {
+  .tabs.tabsTop {
+    --tab-item-padding: var(--space-md);
+  }
+
+  .tabs.tabsTop :global .ant-tabs-tab {
+    min-width: 120px;
+  }
+
+  .tabs.tabsTop :global .ant-tabs-tab-btn {
+    padding: 6px var(--tab-item-padding);
+  }
+}
