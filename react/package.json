@@ -1,0 +1,14 @@
+{
+    "prettier": {
+      "semi": true,
+      "tabWidth": 2,
+      "printWidth": 80,
+      "useTabs": false,
+      "singleQuote": false,
+      "trailingComma": "es5",
+      "jsxSingleQuote": false,
+      "bracketSameLine": false,
+      "singleAttributePerLine": false
+    }
+  }
+  
